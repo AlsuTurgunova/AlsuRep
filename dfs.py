@@ -41,7 +41,8 @@ def depth_first_search(graph, start, end):
   Returns:
     Длина пути от стартовой вершины до конечной, или -1, если путь не найден.
   """
-
+  if start not in graph or end not in graph:
+    raise ValueError("Некорректные входные параметры вершин a и b. Они должны быть вершинами графа.")
   visited = set()
   stack = [start]
   path_lengths = defaultdict(lambda: -1)  # Словарь для хранения длин путей
