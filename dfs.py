@@ -61,7 +61,7 @@ def depth_first_search(graph, start, end):
           path_lengths[neighbor] = path_lengths[node] + 1  # Обновляем длину пути
 
   return -1  # Если путь не найден, возвращаем -1
-
+#Комментарий для проверки
 # Пример использования
 graph = {
   2: [4],
